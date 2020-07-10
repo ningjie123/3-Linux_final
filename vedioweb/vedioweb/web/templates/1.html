@@ -1,0 +1,346 @@
+{% load static %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>交大第一餐饮大楼</title>
+    <link href="{% static 'css/banner-style.css' %}" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .menus.menus1 h1 {
+            vertical-align: sub;
+            float: left;
+            margin-top: 30px;
+            font-size: 54px;
+            text-transform: none;
+            font-family: "华文行楷";
+            font-weight: lighter;
+            color: #a9300a;
+        }
+        
+        .banenr {
+            height: 80px;
+            width: auto;
+            background-color: #a9300a;
+        }
+        
+        .banenr .banner-bg h3 {
+            font-size: 36px;
+            font-weight: lighter;
+            font-family: "华文行楷";
+            float: left;
+            margin-top: 20px;
+            color: #f1f1f1;
+            margin-left: -30px;
+        }
+        
+        .banner-x {
+            text-align: center;
+            background-size: 100% auto;
+        }
+        
+        .banner-bg {
+            margin: auto;
+            width: 1100px;
+            height: 80px;
+            padding-left: 0px;
+        }
+        
+        #more-ms-text {
+            height: 40px;
+            width: 1100px;
+            margin-right: auto;
+            margin-bottom: 0px;
+            margin-left: auto;
+            border-bottom-width: 2px;
+            border-left-width: 7px;
+            border-bottom-style: solid;
+            border-left-style: solid;
+            border-bottom-color: #F00;
+            border-left-color: #6F3;
+        }
+        
+        .more-ms {
+            height: 360px;
+            width: 1100px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 30px;
+            margin-top: 10px;
+        }
+        
+        .more-ms-img {
+            height: 340px;
+            width: 1080px;
+            margin-top: 0px;
+            margin-right: 10px;
+            margin-bottom: 15px;
+            margin-left: 10px;
+        }
+        
+        .more-ms-img-left {
+            float: left;
+            height: 340px;
+            width: 180px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+        }
+        
+        .more-ms-img-right {
+            margin: 0px;
+            height: 340px;
+            width: 900px;
+            float: right;
+        }
+        
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            font-family: "华文行楷";
+            background: #fff;
+            width: 280px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            padding-top: 0px;
+            margin-top: 0px;
+            margin-left: 20px;
+        }
+        
+        .slide-img {
+            padding: 0px;
+            height: 300px;
+            width: 280px;
+            margin-top: 0px;
+            margin-right: auto;
+            margin-bottom: 0px;
+            margin-left: auto;
+        }
+        
+        .slide-text {
+            height: 20px;
+            width: 280px;
+            font-family: "华文行楷";
+            margin-bottom: 0px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        
+        .swiper-slide:nth-child(1n) {
+            width: 280px;
+        }
+        
+        .swiper-slide:nth-child(2n) {
+            width: 280px;
+        }
+        
+        .swiper-slide:nth-child(3n) {
+            width: 280px;
+        }
+        
+        .swiper-slide:nth-child(4n) {
+            width: 280px;
+        }
+        
+        .swiper-slide:nth-child(5n) {
+            width: 280px;
+        }
+        
+        .swiper-slide:nth-child(6n) {
+            width: 280px;
+        }
+        
+        .swiper-slide:nth-child(7n) {
+            width: 280px;
+        }
+        
+        .swiper-slide:nth-child(8n) {
+            width: 280px;
+        }
+        
+        .swiper-slide:nth-child(9n) {
+            width: 280px;
+        }
+        
+        .more-ms .more-ms-img .more-ms-img-left h2 {
+            font-size: 100px;
+            font-family: "华文行楷";
+            font-weight: lighter;
+            margin-top: 15px;
+            margin-left: 30px;
+        }
+        
+        #down {
+            margin-bottom: 80px;
+        }
+
+        h2 {
+            margin-top: 0px;
+            text-align: right;
+            font-family: "华文行楷";
+        }
+
+    </style>
+    <link href="{% static 'css/step.css' %}" rel="stylesheet" type="text/css" />
+    <link href="{% static 'css/swiper.min.css' %}" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <h2>
+        你好！
+    </h2>
+
+    <div class="menus menus1">
+        <h1>舌尖上的交大
+        </h1>
+        <ul>
+            <div class="bg"></div>
+            <li><span><a href="index.html" target="blank">首页</a></span></li>
+            <li><span><a href="1.html">一餐</a></span></li>
+            <li><span><a href="2.html">二餐</a></span></li>
+            <li><span><a href="3.html">三餐</a></span></li>
+            <li><span><a href="4.html">四餐</a></span></li>
+            <li><span><a href="5.html">哈乐餐厅</a></span></li>
+            <li><span><a href="6.html">玉兰苑</a></span></li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <script src="{% static 'js/index.js' %}"></script>
+    <div class="banenr">
+        <div class="banner-bg">
+            <h3>领略交大饮食之美 感知我交百廿历史</h3>
+        </div>
+    </div>
+
+
+    <div class="banner-x"><img src="{% static 'images/gruel/banner.png' %}" /></div>
+
+    <hr />
+
+    <div class="jrcd"><img src="{% static 'images/index/jrms.png' %}" /></div>
+    <div class="more-ms">
+        <div class="more-ms-img">
+            <div class="more-ms-img-left">
+                <h2>一</h2>
+                <h2>楼</h2>
+            </div>
+            <div class="more-ms-img-right">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slide-img"><img src="{% static 'images/gruel/x1.jpg' %}" />
+                                <div class="slide-text">馄饨</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-img"><img src="{% static 'images/gruel/x2.jpg' %}" />
+                                <div class="slide-text">粽子</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-img"><img src="{% static 'images/gruel/x3.jpg' %}" />
+                                <div class="slide-text">印度飞饼</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-img"><img src="{% static 'images/gruel/timg.jpg' %}" />
+                                <div class="slide-text">西红柿鸡蛋面</div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="more-ms">
+        <div class="more-ms-img">
+            <div class="more-ms-img-left">
+                <h2>二</h2>
+                <h2>楼</h2>
+            </div>
+            <div class="more-ms-img-right">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slide-img"><img src="{% static 'images/gruel/t1.png' %}" />
+                                <div class="slide-text">香菇牛肉粥</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-img"><img src="{% static 'images/gruel/t2.jpg' %}" />
+                                <div class="slide-text">板栗烧肉</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-img"><img src="{% static 'images/gruel/t3.jpg' %}" />
+                                <div class="slide-text">醋溜土豆丝</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-img"><img src="{% static 'images/gruel/t4.jpg' %}" />
+                                <div class="slide-text">葱炒豆腐</div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'js/swiper.min.js' %}"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 'auto',
+            spaceBetween: 30,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+
+
+
+
+    </div>
+    </div>
+
+    </div>
+    </div>
+    <footer>
+        <div id="footer">
+            <p>Copyright @ 2008-2018 SHEJIANSHANGDESJTU.com, A11 rights reserved.</p>
+            <p>2020-2030，版权所有舌尖上的SJTU 5CP 备2013146</p>
+            <p>联系作者:Linux期末第3小组</p>
+        </div>
+
+    </footer>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,390 @@
+{% load static %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>交大第二餐饮大楼</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .menus.menus1 h1 {
+            vertical-align: sub;
+            float: left;
+            margin-top: 30px;
+            font-size: 54px;
+            text-transform: none;
+            font-family: "华文行楷";
+            font-weight: lighter;
+            color: #a9300a;
+        }
+        
+        .banenr {
+            height: 80px;
+            width: auto;
+            background-color: #a9300a;
+        }
+        
+        .banenr .banner-bg h3 {
+            font-size: 36px;
+            font-weight: lighter;
+            font-family: "华文行楷";
+            float: left;
+            margin-top: 20px;
+            color: #f1f1f1;
+            margin-left: -30px;
+        }
+        
+        .banner-bg {
+            margin: auto;
+            width: 1100px;
+            height: 80px;
+            padding-left: 0px;
+        }
+        
+        body {
+            font-family: "Microsoft Yahei";
+            font-size: 14px;
+            color: #333;
+            background-color: #E4E1E1;
+        }
+        
+        a,
+        a:hover {
+            text-decoration: none;
+            color: #333;
+        }
+        
+        ul,
+        li {
+            list-style: none;
+        }
+        
+        svg {
+            fill: currentColor;
+        }
+        
+        .mt-tabpage {
+            width: 1100px;
+            margin: 30px auto;
+            box-shadow: 0 0 5px #999;
+            background-color: #FFFFFF;
+        }
+        
+        .mt-tabpage img:hover {
+            font-size: 20px;
+            font-family: "华文行楷";
+            transform: scale(1.1);
+        }
+        
+        .mt-tabpage-title {
+            height: 44px;
+            font-size: 0;
+            font-family: "华文行楷";
+            background-color: #fff;
+            width: 94%;
+            margin: auto;
+            background: #fff;
+            border-bottom: 1px solid #f1f1f1;
+            text-align: center;
+        }
+        
+        .mt-tabpage-title .mt-tabpage-item {
+            display: inline-block;
+            width: 105px;
+            height: 44px;
+            line-height: 44px;
+            text-align: center;
+            color: #666;
+            font-family: "华文行楷";
+            font-size: 20px;
+        }
+        
+        .mt-tabpage-title .mt-tabpage-item:hover {
+            color: #a9300a;
+        }
+        
+        .mt-tabpage-title .mt-tabpage-item-cur {
+            color: #a9300a;
+            font-size: 24px;
+            font-family: "华文行楷";
+            border-bottom: 1px solid #a9300a;
+        }
+        
+        .mt-tabpage-count {
+            position: relative;
+            width: 1100px;
+            height: 340px;
+            overflow: hidden;
+        }
+        
+        .mt-tabpage-cont__wrap {
+            position: absolute;
+        }
+        
+        .mt-tabpage-count .mt-tabpage-item {
+            width: 1100px;
+            height: 340px;
+            text-align: center;
+        }
+        
+        .slide-content {
+            padding: 0px;
+            height: 340px;
+            width: 300px;
+            float: left;
+            margin-left: 50px;
+        }
+        
+        .slide-content-text {
+            height: 32px;
+            margin-top: 0px;
+            padding-top: 8px;
+            font-size: 20px;
+            font-family: "华文行楷";
+        }
+        
+        .main-container {
+            max-width: 1100px;
+            padding: 0px;
+            margin-top: 0px;
+            margin-right: auto;
+            margin-bottom: 20px;
+            margin-left: auto;
+        }
+        
+        .card {
+            height: 460px;
+            width: 1100px;
+            margin-bottom: 50px;
+            border: 2px solid #00F;
+            padding-top: 10px;
+            padding-right: 0px;
+            padding-bottom: 0px;
+            padding-left: 10px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        
+        .card-img-left {
+            width: 600px;
+            height: 450px;
+            float: left;
+            overflow: auto;
+        }
+        
+        .card-text {
+            width: 460px;
+            margin: 0 20px;
+            height: 450px;
+            float: right;
+            position: relative;
+        }
+        
+        .btn {
+            font-size: 24px;
+            font-family: "华文行楷";
+            vertical-align: sub;
+            text-align: justify;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            border: 2px solid #F00;
+        }
+        
+        .card .card-text p {
+            font-family: "华文行楷";
+            font-size: 20px;
+            line-height: 30px;
+            margin-top: 30px;
+        }
+        
+        .card .card-text h3 {
+            font-family: "华文行楷";
+            font-size: 36px;
+            text-align: center;
+        }
+        
+        .banner-x {
+            width: auto;
+            height: 650px;
+            background-image: url(../images/dumpling/banner.png);
+        }
+
+        h2 {
+            margin-top: 0px;
+            text-align: right;
+            font-family: "华文行楷";
+        }
+    </style>
+    <link href="{% static 'css/banner-style.css' %}" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <h2>
+        你好！
+    </h2>
+
+    <div class="menus menus1">
+        <h1>舌尖上的交大
+        </h1>
+        <ul>
+            <div class="bg"></div>
+            <li><span><a href="index.html" target="blank">首页</a></span></li>
+            <li><span><a href="1.html">一餐</a></span></li>
+            <li><span><a href="2.html">二餐</a></span></li>
+            <li><span><a href="3.html">三餐</a></span></li>
+            <li><span><a href="4.html">四餐</a></span></li>
+            <li><span><a href="5.html">哈乐餐厅</a></span></li>
+            <li><span><a href="6.html">玉兰苑</a></span></li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <script src="{% static 'js/index.js' %}"></script>
+    <div class="banenr">
+        <div class="banner-bg">
+            <h3>领略交大饮食之美 感知我交百廿历史</h3>
+        </div>
+    </div>
+
+
+    <div class="banner-x"><img src="{% static 'images/dumpling/banner.png' %}" /></div>
+
+    <div class="mt-tabpage" js-tab="2">
+        <div class="mt-tabpage-title">
+            <a href="javascript:;" class="mt-tabpage-item mt-tabpage-item-cur">传统中餐</a>
+            <a href="javascript:;" class="mt-tabpage-item">西式简餐</a>
+            <a href="javascript:;" class="mt-tabpage-item">清真餐厅</a>
+        </div>
+        <div class="mt-tabpage-count">
+            <ul class="mt-tabpage-cont__wrap">
+                <li class="mt-tabpage-item">
+                    <div class="slide-content"><img src="{% static 'images/dumpling/b1.jpg' %}" />
+                        <div class="slide-content-text">水煮鱼</div>
+                    </div>
+                    <div class="slide-content"><img src="{% static 'images/dumpling/b2.jpg' %}" />
+                        <div class="slide-content-text">小笼包</div>
+                    </div>
+                    <div class="slide-content"><img src="{% static 'images/dumpling/b3.jpg' %}" />
+                        <div class="slide-content-text">炒饭</div>
+                    </div>
+                </li>
+                <li class="mt-tabpage-item">
+                    <div class="slide-content"><img src="{% static 'images/dumpling/j1.jpg' %}" />
+                        <div class="slide-content-text">意面</div>
+                    </div>
+                    <div class="slide-content"><img src="{% static 'images/dumpling/j2.jpg' %}" />
+                        <div class="slide-content-text">沙拉</div>
+                    </div>
+                    <div class="slide-content"><img src="{% static 'images/dumpling/j3.jpg' %}" />
+                        <div class="slide-content-text">牛排</div>
+                    </div>
+                </li>
+                <li class="mt-tabpage-item">
+                    <div class="slide-content"><img src="{% static 'images/dumpling/h1.jpg' %}" />
+                        <div class="slide-content-text">和府豆腐</div>
+                    </div>
+                    <div class="slide-content"><img src="{% static 'images/dumpling/h2.jpg' %}" />
+                        <div class="slide-content-text">锅巴菜</div>
+                    </div>
+                    <div class="slide-content"><img src="{% static 'images/dumpling/h3.jpg' %}" />
+                        <div class="slide-content-text">烧饼</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="{% static 'js/jquery-3.1.1.min.js' %}"></script>
+    <script src="{% static 'js/mt-tabpage.js' %}"></script>
+
+    <script>
+        $(function() {
+            $('[js-tab=2]').tab({
+                curDisplay: 1,
+                changeMethod: 'horizontal'
+            });
+
+            $('[js-tab=3]').tab({
+                curDisplay: 1,
+                changeMethod: 'horizontal'
+            });
+        });
+    </script>
+
+    <div class="jrcd"><img src="{% static 'images/index/jrms.png' %}" /></div>
+    <div class="main-container">
+
+        <div class="card">
+            <div class="card-img-left"><img src="{% static 'images/dumpling/01.jpg' %}" /></div>
+            <div class="card-text">
+                <h3>汤包价位表</h3>
+                <p>1.肉包：6角
+                    <br/>2.豆沙包：6角
+                    <br/>3.雪菜包：6角
+                    <br/>4.豆腐包：6角
+                    <br/>5.蒸饺：5元/10个
+                    <br/>6.小笼包：5元/8个
+                    <br/>7.豆浆：1元
+                    <br/>8.稀饭：1元
+                    <br/>9.胡辣汤：1.5元
+                </p>
+                <a href="#" class="btn">了解更多</a> </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="card">
+        <div class="card-img-left"><img src="{% static 'images/dumpling/03.jpg' %}" /></div>
+        <div class="card-text">
+            <h3>炒饭价位表</h3>
+            <p>1.蛋炒饭：5元
+                <br/>2.老干妈炒饭：5元
+                <br/>3.玉米火腿炒饭：5元
+                <br/>4.香肠炒饭：6元
+                <br/>5.牛肉炒饭：8元
+                <br/>6.印尼炒饭：8元
+                <br/>7.扬州炒饭：8元
+                <br/>8.凤梨炒饭：8元
+                <br/>9.鸡蛋炒面：4元
+                <br/>10.肉丝炒面：5元
+                <br/>
+            </p>
+            <a href="#" class="btn">了解更多</a> </div>
+    </div>
+
+    <div class="card">
+        <div class="card-img-left"><img src="{% static 'images/dumpling/02.jpg' %}" /></div>
+        <div class="card-text">
+            <h3>炒菜价位表</h3>
+
+            <p>1.干煸肥肠:15元
+                <br/>2.肝腰合炒:12元
+                <br/>3.红烧肥肠:15元
+                <br/>4.水煮肉片:12元
+                <br/>5.火爆肚头:18元
+            </p>
+            <a href="#" class="btn">了解更多</a> </div>
+    </div>
+
+
+
+    </div>
+
+    <footer>
+        <div id="footer">
+            <p>Copyright @ 2008-2018 SHEJIANSHANGDESJTU.com, A11 rights reserved.</p>
+            <p>2020-2030，版权所有舌尖上的SJTU 5CP 备2013146</p>
+            <p>联系作者:Linux期末第3小组</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>

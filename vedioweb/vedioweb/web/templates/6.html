@@ -1,0 +1,411 @@
+{% load static %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>玉兰苑</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .menus.menus1 h1 {
+            vertical-align: sub;
+            float: left;
+            margin-top: 30px;
+            font-size: 54px;
+            text-transform: none;
+            font-family: "华文行楷";
+            font-weight: lighter;
+            color: #a9300a;
+        }
+        
+        .banenr {
+            height: 80px;
+            width: auto;
+            background-color: #a9300a;
+        }
+        
+        .banenr .banner-bg h3 {
+            font-size: 36px;
+            font-weight: lighter;
+            font-family: "华文行楷";
+            float: left;
+            margin-top: 20px;
+            color: #f1f1f1;
+            margin-left: -30px;
+        }
+        
+        .banner-bg {
+            margin: auto;
+            width: 1100px;
+            height: 80px;
+            padding-left: 0px;
+        }
+        
+        body {
+            font-size: 14px;
+            background-color: #E4E1E1;
+        }
+        
+        a,
+        a:hover {
+            text-decoration: none;
+            color: #333;
+        }
+        
+        ul,
+        li {
+            list-style: none;
+        }
+        
+        svg {
+            fill: currentColor;
+        }
+        
+        .container p {
+            font-size: 20px;
+            line-height: 24px;
+            vertical-align: middle;
+            padding: 20px;
+        }
+        
+        .mt-tabpage {
+            width: 1100px;
+            box-shadow: 0 0 5px #999;
+            background-color: #FFFFFF;
+            margin-top: 0px;
+            margin-right: auto;
+            margin-bottom: 10px;
+            margin-left: auto;
+        }
+        
+        .mt-tabpage-title {
+            height: 44px;
+            font-size: 30px;
+            background-color: #fff;
+            width: 94%;
+            margin: auto;
+            background: #fff;
+            border-bottom: 1px solid #f1f1f1;
+            text-align: center;
+            vertical-align: middle;
+        }
+        
+        .mt-tabpage-title .mt-tabpage-item {
+            display: inline-block;
+            width: 105px;
+            height: 44px;
+            line-height: 44px;
+            text-align: center;
+            font-family: "华文行楷";
+            color: #666;
+            font-size: 20px;
+        }
+        
+        .mt-tabpage-title .mt-tabpage-item:hover {
+            color: #a9300a;
+        }
+        
+        .mt-tabpage img:hover {
+            font-size: 20px;
+            transform: scale(1.1);
+        }
+        
+        .mt-tabpage-title .mt-tabpage-item-cur {
+            color: #a9300a;
+            font-family: "华文行楷";
+            font-size: 24px;
+            border-bottom: 1px solid #F85B5E;
+        }
+        
+        .mt-tabpage-count {
+            position: relative;
+            width: 1100px;
+            height: 1040px;
+            overflow: hidden;
+        }
+        
+        .mt-tabpage-cont__wrap {
+            position: absolute;
+        }
+        
+        .mt-tabpage-count .mt-tabpage-item {
+            width: 1100px;
+            height: 1040px;
+            text-align: center;
+        }
+        
+        .slide-content {
+            padding: 0px;
+            height: 340px;
+            width: 300px;
+            float: left;
+            margin-left: 50px;
+        }
+        
+        .slide-content-text {
+            height: 32px;
+            margin-top: 0px;
+            padding-top: 8px;
+            font-size: 16px;
+            font-family: "华文行楷";
+        }
+        
+        .container {
+            height: 950px;
+            width: 1100px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+        
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .box1 {
+            width: 1100px;
+            height: 250px;
+        }
+        
+        .box2 {
+            width: 1100px;
+            height: 700px;
+        }
+        
+        .box1-1 {
+            width: 540px;
+            height: 250px;
+            float: left;
+            margin: 0px;
+        }
+        
+        .box1-2 {
+            width: 300px;
+            height: 250px;
+            float: left;
+            margin: 0px;
+        }
+        
+        .box1-3 {
+            width: 260px;
+            height: 250px;
+            float: left;
+            margin: 0px;
+        }
+        
+        .box2-1 {
+            width: 275px;
+            height: 700px;
+            float: left;
+            margin: 0px;
+        }
+        
+        .box2-1-1 {
+            width: 275px;
+            height: 300px;
+            margin: 0px;
+        }
+        
+        .box2-1-2 {
+            width: 275px;
+            height: 400px;
+            margin: 0px;
+        }
+        
+        .box2-2 {
+            width: 550px;
+            height: 700px;
+            float: left;
+            margin: 0px;
+        }
+        
+        .box2-2-1 {
+            width: 550px;
+            height: 450px;
+            margin: 0px;
+        }
+        
+        .box2-2-2 {
+            width: 550px;
+            height: 200px;
+            margin: 0px;
+        }
+
+        h2 {
+            margin-top: 0px;
+            text-align: right;
+            font-family: "华文行楷";
+        }
+    </style>
+    <link href="{% static 'css/banner-style.css' %}" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <h2>
+        你好！
+    </h2>
+
+    <div class="menus menus1">
+        <h1>舌尖上的交大
+        </h1>
+        <ul>
+            <div class="bg"></div>
+            <li><span><a href="index.html" target="blank">首页</a></span></li>
+            <li><span><a href="1.html">一餐</a></span></li>
+            <li><span><a href="2.html">二餐</a></span></li>
+            <li><span><a href="3.html">三餐</a></span></li>
+            <li><span><a href="4.html">四餐</a></span></li>
+            <li><span><a href="5.html">哈乐餐厅</a></span></li>
+            <li><span><a href="6.html">玉兰苑</a></span></li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <script src="{% static 'js/index.js' %}"></script>
+    <div class="banenr">
+        <div class="banner-bg">
+            <h3>领略交大饮食之美 感知我交百廿历史</h3>
+        </div>
+    </div>
+
+    <div class="banner-x"><img src="{% static 'images/cake/banner.png' %}" /></div>
+    <div class="jrcd"><img src="{% static 'images/index/jrms.png' %}" /></div>
+    <div class="mt-tabpage" js-tab="2">
+        <div class="mt-tabpage-title">
+            <a href="javascript:;" class="mt-tabpage-item mt-tabpage-item-cur">玉兰周边</a>
+            <a href="javascript:;" class="mt-tabpage-item">统禾餐厅</a>
+            <a href="javascript:;" class="mt-tabpage-item">茶餐厅</a>
+        </div>
+        <div class="mt-tabpage-count">
+            <ul class="mt-tabpage-cont__wrap">
+                <li class="mt-tabpage-item">
+                    <div class="slide-content"><img src="{% static 'images/cake/b1.jpg' %}" />
+                        <div class="slide-content-text">鸡蛋灌饼</div>
+                    </div>
+                    <div class="slide-content"><img src="{% static 'images/cake/b2.jpg' %}" />
+                        <div class="slide-content-text">小眷村奶茶</div>
+                    </div>
+                    <div class="slide-content"><img src="{% static 'images/cake/b3.jpg' %}" />
+                        <div class="slide-content-text">炸土豆</div>
+                    </div>
+                    <div class="slide-content"><img src="{% static 'images/cake/b4.jpg' %}" />
+                        <div class="slide-content-text">餐堡</div>
+                    </div>
+                    <div class="slide-content"><img src="{% static 'images/cake/b5.jpg' %}" />
+                        <div class="slide-content-text">蓝莓吐司</div>
+                    </div>
+                    <div class="slide-content"><img src="{% static 'images/cake/b6.jpg' %}" />
+                        <div class="slide-content-text">西瓜吐司</div>
+                    </div>
+                    <div class="slide-content"><img src="{% static 'images/cake/b7.jpg' %}" />
+                        <div class="slide-content-text">水果三明治</div>
+                    </div>
+                    <div class="slide-content"><img src="{% static 'images/cake/b8.jpg' %}" />
+                        <div class="slide-content-text">简单三明治</div>
+                    </div>
+                    <div class="slide-content"><img src="{% static 'images/cake/b9.jpg' %}" />
+                        <div class="slide-content-text">鸡蛋三明治</div>
+                    </div>
+
+                </li>
+                <li class="mt-tabpage-item">
+                    <div class="slide-content"><img src="{% static 'images/cake/q1.jpg' %}" />
+                        <div class="slide-content-text">石锅拌饭</div>
+                    </div>
+                    <div class="slide-content"><img src="{% static 'images/cake/q2.jpg' %}" />
+                        <div class="slide-content-text">葱饼</div>
+                    </div>
+                    <div class="slide-content"><img src="{% static 'images/cake/q3.jpg' %}" />
+                        <div class="slide-content-text">韭菜饼</div>
+                    </div>
+                    <div class="slide-content"><img src="{% static 'images/cake/q4.jpg' %}" />
+                        <div class="slide-content-text">鸡蛋饼</div>
+                    </div>
+                    <div class="slide-content"><img src="{% static 'images/cake/q5.jpg' %}" />
+                        <div class="slide-content-text">蛋包饭</div>
+                    </div>
+                    <div class="slide-content"><img src="{% static 'images/cake/q6.jpg' %}" />
+                        <div class="slide-content-text">培根滑蛋饭</div>
+                    </div>
+                    <div class="slide-content"><img src="{% static 'images/cake/q7.jpg' %}" />
+                        <div class="slide-content-text">藕饼</div>
+                    </div>
+                    <div class="slide-content"><img src="{% static 'images/cake/q8.jpg' %}" />
+                        <div class="slide-content-text">手抓饼</div>
+                    </div>
+                    <div class="slide-content"><img src="{% static 'images/cake/q9.jpg' %}" />
+                        <div class="slide-content-text">炸酱面</div>
+                    </div>
+                </li>
+                <li class="mt-tabpage-item">
+                    <div class="slide-content"><img src="{% static 'images/cake/p1.jpg' %}" />
+                        <div class="slide-content-text">烤鸭</div>
+                    </div>
+                    <div class="slide-content"><img src="{% static 'images/cake/p2.jpg' %}" />
+                        <div class="slide-content-text">云吞面</div>
+                    </div>
+                    <div class="slide-content"><img src="{% static 'images/cake/p3.jpg' %}" />
+                        <div class="slide-content-text">例汤</div>
+                    </div>
+                    <div class="slide-content"><img src="{% static 'images/cake/p4.jpg' %}" />
+                        <div class="slide-content-text">披萨上新</div>
+                    </div>
+                    <div class="slide-content"><img src="{% static 'images/cake/p5.jpg' %}" />
+                        <div class="slide-content-text">披萨上新</div>
+                    </div>
+                    <div class="slide-content"><img src="{% static 'images/cake/p6.jpg' %}" />
+                        <div class="slide-content-text">披萨上新</div>
+                    </div>
+                    <div class="slide-content"><img src="{% static 'images/cake/p7.jpg' %}" />
+                        <div class="slide-content-text">披萨上新</div>
+                    </div>
+                    <div class="slide-content"><img src="{% static 'images/cake/p8.jpg' %}" />
+                        <div class="slide-content-text">披萨上新</div>
+                    </div>
+                    <div class="slide-content"><img src="{% static 'images/cake/p9.jpg' %}" />
+                        <div class="slide-content-text">披萨上新</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="{% static 'js/jquery-3.1.1.min.js' %}"></script>
+    <script src="{% static 'js/mt-tabpage.js' %}"></script>
+
+    <script>
+        $(function() {
+            $('[js-tab=2]').tab({
+                curDisplay: 1,
+                changeMethod: 'horizontal'
+            });
+
+            $('[js-tab=3]').tab({
+                curDisplay: 1,
+                changeMethod: 'horizontal'
+            });
+        });
+    </script>
+    <hr />
+
+
+    <footer>
+        <div id="footer">
+            <p>Copyright @ 2008-2018 SHEJIANSHANGDESJTU.com, A11 rights reserved.</p>
+            <p>2020-2030，版权所有舌尖上的SJTU 5CP 备2013146</p>
+            <p>联系作者:Linux期末第3小组</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

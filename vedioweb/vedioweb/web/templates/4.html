@@ -1,0 +1,421 @@
+{% load static %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>交大第四餐饮大楼</title>
+
+    <style type="text/css">
+        .menus.menus1 h1 {
+            vertical-align: sub;
+            float: left;
+            margin-top: 30px;
+            font-size: 54px;
+            text-transform: none;
+            font-family: "华文行楷";
+            font-weight: lighter;
+            color: #a9300a;
+        }
+        
+        .banenr {
+            height: 80px;
+            width: auto;
+            background-color: #a9300a;
+        }
+        
+        .banenr .banner-bg h3 {
+            font-size: 36px;
+            font-weight: lighter;
+            font-family: "华文行楷";
+            float: left;
+            margin-top: 20px;
+            color: #f1f1f1;
+            margin-left: -30px;
+        }
+        
+        .banner-bg {
+            margin: auto;
+            width: 1100px;
+            height: 80px;
+            padding-left: 0px;
+        }
+        
+        #zpc-content {
+            height: 450px;
+            width: auto;
+            padding-top: 0px;
+        }
+        
+        #ex-top {
+            margin-top: 0px;
+        }
+        
+        .step-text {
+            height: 90px;
+            width: 200px;
+            margin-top: 10px;
+            text-align: left;
+            vertical-align: middle;
+            padding-top: 15px;
+            line-height: 24px;
+            padding-bottom: 15px;
+        }
+        
+        .step-text p {
+            margin: 10px;
+        }
+        
+        .step-img1 {
+            margin-top: 10px;
+        }
+        
+        .step-img {
+            height: 120px;
+            width: 160px;
+            margin-top: 10px;
+            margin-left: 0px;
+        }
+        
+        #zpc-content-00 {
+            float: left;
+            height: 350px;
+            width: 670px;
+            padding: 0px;
+            margin-top: 0px;
+            font-family: "华文行楷";
+            color: #a9300a;
+        }
+        
+        .video {
+            height: 378px;
+        }
+        
+        .video-text {
+            height: 130px;
+            font-size: 18px;
+            font-family: "华文行楷";
+        }
+        
+        #zpc-content-step {
+            height: 450px;
+            width: 420px;
+            float: right;
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-left: 10px;
+            padding: 0px;
+            font-family: "华文行楷";
+        }
+        
+        #step-text {
+            margin: 0px;
+            height: 650px;
+            width: 220px;
+            float: right;
+            font-size: 18px;
+            font-family: "华文行楷";
+        }
+        
+        #step-img {
+            height: 650px;
+            width: 180px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            float: right;
+        }
+        
+        .app {
+            width: 1100px;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .box {
+            float: left;
+            width: 280px;
+            overflow: hidden;
+            background: #f6f6f6;
+            box-sizing: border-box;
+            margin-left: 20px;
+            padding-top: 0;
+            padding-right: 15px;
+            padding-bottom: 25px;
+            padding-left: 15px;
+            position: relative;
+            height: 328px;
+        }
+        
+        #box-left {
+            margin-left: 14px;
+        }
+        
+        .box a {
+            float: inherit;
+            flex-direction: column;
+            align-items: center;
+            color: #535353;
+            text-decoration: none;
+        }
+        
+        .box a:hover {
+            color: #a9300a;
+        }
+        
+        .imgBox {
+            width: 280px;
+            height: 187px;
+            overflow: hidden;
+        }
+        
+        .imgBox img {
+            width: 100%;
+            height: 100%;
+            transition: all 0.6s linear;
+        }
+        
+        .source {
+            border: 1px solid #535353;
+            padding: 6px 20px;
+            border-radius: 25px;
+            margin: 20px;
+        }
+        
+        .title {
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-family: "华文行楷";
+        }
+        
+        .detail {
+            font-size: 18px;
+            font-family: "华文行楷";
+            line-height: 160%;
+            text-align: justify;
+            width: 100%;
+        }
+        
+        .box>a::after {
+            content: '';
+            width: 280px;
+            position: absolute;
+            background: #a9300a;
+            bottom: 0;
+            height: 0px;
+            transition: height 0.3s linear;
+        }
+        
+        .box:hover img {
+            transform: scale(1.15);
+        }
+        
+        .box:hover .source {
+            background: #a9300a;
+            border-color: #a9300a;
+            color: #ffffff;
+        }
+        
+        .btn {
+            font-size: 16px;
+            font-family: "华文行楷";
+            vertical-align: sub;
+            text-align: justify;
+            position: absolute;
+            bottom: 0px;
+            right: 20px;
+            border: 2px solid #F00;
+        }
+
+        h2 {
+            margin-top: 0px;
+            text-align: right;
+            font-family: "华文行楷";
+        }
+    </style>
+    <link href="{% static 'css/banner-style.css' %}" rel="stylesheet" type="text/css" />
+
+
+</head>
+
+<body>
+    <h2>
+        你好！
+    </h2>
+
+    <div class="menus menus1">
+        <h1>舌尖上的交大
+        </h1>
+        <ul>
+            <div class="bg"></div>
+            <li><span><a href="index.html" target="blank">首页</a></span></li>
+            <li><span><a href="1.html">一餐</a></span></li>
+            <li><span><a href="2.html">二餐</a></span></li>
+            <li><span><a href="3.html">三餐</a></span></li>
+            <li><span><a href="4.html">四餐</a></span></li>
+            <li><span><a href="5.html">哈乐餐厅</a></span></li>
+            <li><span><a href="6.html">玉兰苑</a></span></li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <script src="{% static 'js/index.js' %}"></script>
+    <div class="banenr">
+        <div class="banner-bg">
+            <h3>领略交大饮食之美 感知我交百廿历史</h3>
+        </div>
+    </div>
+
+
+    <div class="container">
+
+        <div class="banner-x"><img src="{% static 'images/fried rice/banner.png' %}" /></div>
+
+        <div class="zpc">
+            <div id="zpc-text-line">招牌菜：嫩虾炒饭</div>
+            <div id="zpc-content">
+                <div id="zpc-content-00">
+                    <br/>
+                    <div class="video"><video controls="controls" width=100% height="100%"><source src="{% static 'media/xrcf.mp4' %}" /></video></div>
+                </div>
+                <div id="zpc-content-step">
+                    <div id="step-img">
+                        <div class="step-img1"><img src="{% static 'images/fried rice/01.png' %}" /></div>
+                        <div class="step-img1"><img src="{% static 'images/fried rice/02.png' %}" /></div>
+                        <div class="step-img1"><img src="{% static 'images/fried rice/03.png' %}" /></div>
+                    </div>
+                    <div id="step-text">
+                        <div class="step-text">
+                            <p>鸡排饭</p>
+                        </div>
+                        <div class="step-text">
+                            <p>铁板牛排意面</p>
+                        </div>
+                        <div class="step-text">
+                            <p>烤冷面</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr />
+
+
+        <div class="jrcd"><img src="{% static 'images/index/jrms.png' %}" /></div>
+
+        <div class="app" id="ex-top">
+            <div class="box" id="box-left">
+                <a href="#">
+                    <div class="imgBox">
+                        <img src="{% static 'images/fried rice/nrcf.png' %}" alt="">
+                    </div>
+
+                    <h2 class="title">腊肉炒饭</h2>
+
+                    <p><span class="detail">
+            1.先准备原料:烟熏腊肉适量，米饭适量，鸡蛋一个，少许辣椒<br/>
+            2.腊肉蒸熟切好…… </span></p>
+                </a>
+                <div class="btn"><a href="#">了解更多</a></div>
+            </div>
+
+            <div class="box">
+                <a href="#">
+                    <div class="imgBox">
+                        <img src="{% static 'images/fried rice/ymcf.jpg' %}" alt="">
+                    </div>
+
+                    <h2 class="title">扬州炒饭</h2>
+                </a>
+
+                <p><span class="detail">
+            1.先准备原料:烟熏腊肉适量，米饭适量，鸡蛋一个，少许黄瓜，青豆，火腿<br/>
+            2.黄瓜和火腿切成丁…… </span></p>
+                </a>
+                <div class="btn"><a href="#">了解更多</a></div>
+            </div>
+
+            <div class="box">
+                <a href="#">
+                    <div class="imgBox">
+                        <img src="{% static 'images/fried rice/hxcf.jpg' %}" alt="">
+                    </div>
+
+                    <h2 class="title">海鲜炒饭</h2>
+
+                    <p><span class="detail">
+            1.先准备原料:处理好的虾适量，鱿鱼须适量，米饭适量，鸡蛋一个，少许玉米<br/>
+            2.腊肉蒸熟切好…… </span></p>
+                </a>
+                <div class="btn"><a href="#">了解更多</a></div>
+            </div>
+
+        </div>
+        <div class="app">
+            <div class="box" id="box-left">
+                <a href="#">
+                    <div class="imgBox">
+                        <img src="{% static 'images/fried rice/hgcf.jpg' %}" alt="">
+                    </div>
+
+                    <h2 class="title">沙拉炒饭</h2>
+
+                    <p><span class="detail">
+            1.先准备原料:黄瓜适量，小番茄适量，米饭适量，鸡蛋一个，少许榨腊肉芝麻<br/>
+          2.将鸡蛋打好…… </span></p>
+                </a>
+                <div class="btn"><a href="#">了解更多</a></div>
+            </div>
+            <div class="box">
+                <a href="#">
+                    <div class="imgBox">
+                        <img src="{% static 'images/fried rice/htcf.jpg' %}" alt="">
+                    </div>
+
+                    <h2 class="title">火腿炒饭</h2>
+
+                    <p><span class="detail">
+            1.先准备原理:火腿适量，胡萝卜适量，米饭适量，鸡蛋一个，少许葱花<br/>
+            2.火腿肠切丁…… </span></p>
+                </a>
+                <div class="btn"><a href="#">了解更多</a></div>
+            </div>
+            <div class="box">
+                <a href="#">
+                    <div class="imgBox">
+                        <img src="{% static 'images/fried rice/sjcf.jpg' %}" alt="">
+                    </div>
+
+                    <h2 class="title">什锦炒饭</h2>
+
+                    <p><span class="detail">
+            1.先准备原理:香菇适量，西兰花适量，米饭适量，鸡蛋一个，少许洋葱<br/>
+            2.切好西兰花…… </span></p>
+                </a>
+                <div class="btn"><a href="#">了解更多</a></div>
+            </div>
+
+        </div>
+
+
+        <footer>
+            <div id="footer">
+                <p>Copyright @ 2008-2018 SHEJIANSHANGDESJTU.com, A11 rights reserved.</p>
+                <p>2020-2030，版权所有舌尖上的SJTU 5CP 备2013146</p>
+                <p>联系作者:Linux期末第3小组</p>
+            </div>
+
+        </footer>
+
+
+
+</body>
+
+</html>

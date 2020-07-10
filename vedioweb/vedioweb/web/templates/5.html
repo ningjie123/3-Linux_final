@@ -1,0 +1,364 @@
+{% load static %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>哈乐餐厅</title>
+    <style type="text/css">
+        .menus.menus1 h1 {
+            vertical-align: sub;
+            float: left;
+            margin-top: 30px;
+            font-size: 54px;
+            text-transform: none;
+            font-family: "华文行楷";
+            font-weight: lighter;
+            color: #a9300a;
+        }
+        
+        .banenr {
+            height: 80px;
+            width: auto;
+            background-color: #a9300a;
+        }
+        
+        .banenr .banner-bg h3 {
+            font-size: 36px;
+            font-weight: lighter;
+            font-family: "华文行楷";
+            float: left;
+            margin-top: 20px;
+            color: #f1f1f1;
+            margin-left: -30px;
+        }
+        
+        .banner-bg {
+            margin: auto;
+            width: 1100px;
+            height: 80px;
+            padding-left: 0px;
+        }
+        
+        #app {
+            width: 1100px;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        
+        .box {
+            float: left;
+            width: 280px;
+            overflow: hidden;
+            background: #f6f6f6;
+            box-sizing: border-box;
+            margin-left: 20px;
+            padding-top: 0;
+            padding-right: 15px;
+            padding-bottom: 25px;
+            padding-left: 15px;
+            height: 400px;
+        }
+        
+        #box-left {
+            margin-left: 14px;
+        }
+        
+        .box a {
+            float: inherit;
+            flex-direction: column;
+            align-items: center;
+            color: #535353;
+            text-decoration: none;
+        }
+        
+        #jrcd {
+            margin-top: 5px;
+        }
+        /*.img-exhibition img:hover {}
+        
+        #cd {
+            margin-top: 10px;
+            margin-right: auto;
+            margin-left: auto;
+        }*/
+        
+        .box a:hover {
+            color: #e52d67;
+        }
+        
+        .imgBox {
+            width: 280px;
+            height: 187px;
+            overflow: hidden;
+        }
+        
+        .imgBox img {
+            width: 100%;
+            height: 100%;
+            transition: all 0.6s linear;
+        }
+        
+        .source {
+            border: 1px solid #535353;
+            font-family: "华文行楷";
+            padding: 6px 20px;
+            border-radius: 25px;
+            margin: 20px;
+        }
+        
+        .title {
+            margin-bottom: 20px;
+            font-size: 20px;
+            font-family: "华文行楷";
+        }
+        
+        .detail {
+            font-size: 14px;
+            line-height: 160%;
+            text-align: justify;
+            font-family: "华文行楷";
+            width: 100%;
+        }
+        
+        .box>a::after {
+            content: '';
+            width: 280px;
+            position: absolute;
+            background: #e52d67;
+            bottom: 0;
+            height: 0px;
+            transition: height 0.3s linear;
+        }
+        
+        .box:hover img {
+            transform: scale(1.15);
+        }
+        
+        .box:hover .source {
+            background: #e52d67;
+            border-color: #e52d67;
+            color: #ffffff;
+            font-family: "华文行楷";
+        }
+        
+        .exhibition {
+            width: 1100px;
+            height: 250px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        
+        .exhibition img {
+            width: 200px;
+            height: 200px;
+        }
+        
+        .img-exhibition {
+            margin-top: 25px;
+            width: 200px;
+            height: 200px;
+            margin-right: 80px;
+            float: left;
+        }
+        
+        .img-exhibition-first {
+            margin-left: 30px;
+            margin-right: 80px;
+            margin-top: 25px;
+            width: 200px;
+            height: 200px;
+            float: left;
+        }
+        
+        .img-exhibition-last {
+            margin-right: 30px;
+            margin-top: 25px;
+            width: 200px;
+            height: 200px;
+            float: left;
+        }
+        
+        .exhibition-text {
+            width: 200px;
+            height: 25px;
+            text-align: center;
+            margin-top: 5px;
+            font-family: "华文行楷";
+        }
+        
+        .container {
+            padding: 0px;
+            height: 600px;
+            width: 1100px;
+            margin-top: 50px;
+            margin-right: auto;
+            margin-bottom: 40px;
+            margin-left: auto;
+        }
+        
+        .introduce-left {
+            padding-top: 100px;
+            width: 300px;
+            margin-left: 25px;
+            margin-right: 25px;
+            height: 500px;
+            float: left;
+        }
+        
+        .introduce-right {
+            width: 300px;
+            margin-left: 25px;
+            margin-top: 200px;
+            height: 450px;
+            float: left;
+        }
+        
+        .introduce-mid {
+            width: 400px;
+            height: 600px;
+            float: left;
+        }
+
+        h2 {
+            margin-top: 0px;
+            text-align: right;
+            font-family: "华文行楷";
+        }
+    </style>
+    <link href="{% static 'css/banner-style.css' %}" rel="stylesheet" type="text/css" />
+</head>
+
+
+<body>
+    <h2>
+        你好！
+    </h2>
+
+    <div class="menus menus1">
+        <h1>舌尖上的交大
+        </h1>
+        <ul>
+            <div class="bg"></div>
+            <li><span><a href="index.html" target="blank">首页</a></span></li>
+            <li><span><a href="1.html">一餐</a></span></li>
+            <li><span><a href="2.html">二餐</a></span></li>
+            <li><span><a href="3.html">三餐</a></span></li>
+            <li><span><a href="4.html">四餐</a></span></li>
+            <li><span><a href="5.html">哈乐餐厅</a></span></li>
+            <li><span><a href="6.html">玉兰苑</a></span></li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <script src="{% static 'js/index.js' %}"></script>
+    <div class="banenr">
+        <div class="banner-bg">
+            <h3>领略交大饮食之美 感知我交百廿历史</h3>
+        </div>
+    </div>
+
+    <div class="banner-x"><img src="{% static 'images/drink/banner.png' %}" /></div>
+    <div class="jrcd" id="jrcd"><img src="{% static 'images/index/jrms.png' %}" /></div>
+    <div id="app">
+        <div class="box" id="box-left">
+            <a href="#">
+                <div class="imgBox">
+                    <img src="{% static 'images/drink/e1.jpg' %}" alt="">
+                </div>
+                <br/>
+                <span class="source">沁人心脾</span>
+                <br/>
+                <h2 class="title">土豆泥</h2>
+                <p>土豆泥蒸至软糯的土豆捣碎配以牛奶，肉丁</p>
+                <p>土豆的咸味与丝滑的奶香相得益彰</p>
+                <p>是独属于交大人的幸福味道</p>
+            </a>
+        </div>
+        <div class="box">
+            <a href="#">
+                <div class="imgBox">
+                    <img src="{% static 'images/drink/e2.jpg' %}" alt="">
+                </div>
+                <br/>
+                <span class="source">营养均衡</span>
+                <br/>
+                <h2 class="title">炸鸡饭</h2>
+                <p><em id="step_num1"></em>炸鸡饭作为很多师生喜欢的哈乐美味</p>
+                <p><em id="step_num2"></em>它们的魅力不知如何形容</p>
+                <p><em id="step_num3"></em>粉嫩的鲜肉，麻辣鲜香，汤红油亮，一口惊艳&nbsp;</p>
+            </a>
+        </div>
+        <div class="box">
+            <a href="#">
+                <div class="imgBox">
+                    <img src="{% static 'images/drink/e3.jpg' %}" alt="">
+                </div>
+                <br/>
+                <span class="source">流连忘返</span>
+                <br/>
+                <h2 class="title">糯米粽</h2>
+
+                <p>一粒粒糯米 带着粽叶的清香与端午的祈愿
+                </p>
+                <p>粘连在一起 入口软糯 入心芬芳</p>
+                <p>别心急 再等等 流心的蛋黄和咸香的猪肉即将登场
+                </p>
+            </a>
+        </div>
+    </div>
+    <hr />
+
+
+
+
+    <div id="cd">
+        <div class="exhibition">
+            <div class="img-exhibition-first"><img src="{% static 'images/drink/1.jpg' %}" />
+                <div class="exhibition-text">柠檬果汁</div>
+            </div>
+            <div class="img-exhibition"><img src="{% static 'images/drink/2.jpg' %}" />
+                <div class="exhibition-text">草莓奶果汁 </div>
+            </div>
+            <div class="img-exhibition"><img src="{% static 'images/drink/3.jpg' %}" />
+                <div class="exhibition-text">橙汁</div>
+            </div>
+            <div class="img-exhibition-last"><img src="{% static 'images/drink/4.jpg' %}" />
+                <div class="exhibition-text">西柚果汁</div>
+            </div>
+        </div>
+
+        <div class="exhibition">
+            <div class="img-exhibition-first"><img src="{% static 'images/drink/5.jpg' %}" />
+                <div class="exhibition-text">柠檬西瓜果汁</div>
+            </div>
+            <div class="img-exhibition"><img src="{% static 'images/drink/6.jpg' %}" />
+                <div class="exhibition-text">草莓冰冷饮 </div>
+            </div>
+            <div class="img-exhibition"><img src="{% static 'images/drink/7.jpg' %}" />
+                <div class="exhibition-text">草莓果汁</div>
+            </div>
+            <div class="img-exhibition-last"><img src="{% static 'images/drink/8.jpg' %}" />
+                <div class="exhibition-text">三色果汁</div>
+            </div>
+        </div>
+    </div>
+    <hr />
+
+    <footer>
+        <div id="footer">
+            <p>Copyright @ 2008-2018 SHEJIANSHANGDESJTU.com, A11 rights reserved.</p>
+            <p>2020-2030，版权所有舌尖上的SJTU 5CP 备2013146</p>
+            <p>联系作者:Linux期末第3小组</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>

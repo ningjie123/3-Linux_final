@@ -1,0 +1,318 @@
+{% load static %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>交大第三餐饮大楼</title>
+    <style type="text/css">
+        .menus.menus1 h1 {
+            vertical-align: sub;
+            float: left;
+            margin-top: 30px;
+            font-size: 54px;
+            text-transform: none;
+            font-family: "华文行楷";
+            font-weight: lighter;
+            color: #a9300a;
+        }
+        
+        .banenr {
+            height: 80px;
+            width: auto;
+            background-color: #a9300a;
+        }
+        
+        .banenr .banner-bg h3 {
+            font-size: 36px;
+            font-weight: lighter;
+            font-family: "华文行楷";
+            float: left;
+            margin-top: 20px;
+            color: #f1f1f1;
+            margin-left: -30px;
+        }
+        
+        .banner-bg {
+            margin: auto;
+            width: 1100px;
+            height: 80px;
+            padding-left: 0px;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin-top: 50px;
+            margin-right: auto;
+            margin-bottom: auto;
+            margin-left: auto;
+        }
+        
+        .card {
+            width: 100%;
+            height: 450px;
+            padding: 0px;
+            margin-bottom: 80px;
+            position: relative;
+        }
+        
+        .card .card-text p {
+            font-family: "华文行楷";
+            font-size: 20px;
+            line-height: 30px;
+            margin-top: 30px;
+        }
+        
+        .card-img-left {
+            width: 600px;
+            height: 450px;
+            float: left;
+            overflow: auto;
+        }
+        
+        .card .card-text h3 {
+            font-family: "华文行楷";
+            font-size: 36px;
+            text-align: center;
+        }
+        
+        .btn {
+            font-size: 24px;
+            vertical-align: sub;
+            text-align: justify;
+            position: absolute;
+            bottom: 0px;
+            right: 20px;
+            font-family: "华文行楷";
+            border: 2px solid #F00;
+        }
+        
+        .btn-left {
+            font-size: 24px;
+            vertical-align: sub;
+            text-align: justify;
+            position: absolute;
+            bottom: 0px;
+            left: 20px;
+            font-family: "华文行楷";
+            border: 2px solid #F00;
+        }
+        
+        .card-img-right {
+            width: 600px;
+            height: 450px;
+            float: right;
+            font-family: "华文行楷";
+            overflow: auto;
+        }
+        
+        .card-text {
+            width: 460px;
+            margin: 0 20px;
+            height: 450px;
+            font-family: "华文行楷";
+            float: left;
+        }
+
+        h2 {
+            margin-top: 0px;
+            text-align: right;
+            font-family: "华文行楷";
+        }
+    </style>
+    <link href="{% static 'css/aos.css' %}" rel="stylesheet" type="text/css" />
+
+    <link href="{% static 'css/banner-style.css' %}" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <h2>
+        你好！
+    </h2>
+
+    <div class="menus menus1">
+        <h1>舌尖上的交大
+        </h1>
+        <ul>
+            <div class="bg"></div>
+            <li><span><a href="index.html" target="blank">首页</a></span></li>
+            <li><span><a href="1.html">一餐</a></span></li>
+            <li><span><a href="2.html">二餐</a></span></li>
+            <li><span><a href="3.html">三餐</a></span></li>
+            <li><span><a href="4.html">四餐</a></span></li>
+            <li><span><a href="5.html">哈乐餐厅</a></span></li>
+            <li><span><a href="6.html">玉兰苑</a></span></li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <script src="{% static 'js/index.js' %}"></script>
+    <div class="banenr">
+        <div class="banner-bg">
+            <h3>领略交大饮食之美 感知我交百廿历史</h3>
+        </div>
+    </div>
+
+    <div class="banner-x"><img src="{% static 'images/noodle/banner.png' %}"></div>
+    <div class="container">
+        <div class="jrcd"><img src="{% static 'images/index/jrms.png' %}" /></div>
+
+        <section data-aos="fade-up">
+            <div class="card">
+                <div class="card-img-left"><img src="{% static 'images/noodle/1.jpg' %}" /></div>
+                <div class="card-text">
+                    <h3>生煎</h3>
+                    <p>生煎又称生煎馒头，上海市传统的汉族风味小吃，
+                        <br/>表皮松软，底板香脆，馅鲜多汁。
+                        <br/>发面和好，包馅成形，放平底锅中。
+                        <br/>煎时放少许水，小火焖熟，至底部成金黄色时．撤上葱花、芝麻
+                        <br/>
+                    </p>
+                    <div class="btn"><a href="#">了解更多</a></div>
+                </div>
+            </div>
+        </section>
+
+        <section data-aos="fade-left">
+            <div class="card">
+                <div class="card-img-right"><img src="{% static 'images/noodle/2.jpg' %}" /></div>
+                <div class="card-text">
+                    <h3>河南烩面</h3>
+                    <p>河南烩面是“中国十大面条”之一，河南三大小吃之一。
+                        <br/>是一种荤、素、汤、饭聚而有之的传统风味小吃，
+                        <br/>汤好、面筋道、营养高，以味道鲜美，经济实惠，遍及全国。
+                        <br/>烩面以优质高筋面粉为原料，辅以高汤及多种配菜，一种类似宽面条的面食。
+                        <br/>汤用上等嫩羊肉、羊骨（劈开，露出中间的骨髓）一起煮五个小时以上
+                        <br/>辅料以海带丝、千张丝、粉条、香菜、鹌鹑蛋等，
+                        <br/>上桌时再外带香菜、辣椒油、糖蒜、辣椒碎等小碟，分为汤面和捞面两种。
+                        <br/>
+                    </p>
+                    <a href="#" class="btn-left">了解更多</a> </div>
+            </div>
+        </section>
+
+
+        <section data-aos="fade-right">
+            <div class="card">
+                <div class="card-img-left"><img src="{% static 'images/noodle/3.jpg' %}" /></div>
+                <div class="card-text">
+                    <h3>麻辣小龙虾</h3>
+                    <p>麻辣小龙虾以小龙虾为主材，配以辣椒、花椒和其他香辛料制成。
+                        <br/>成菜后，色泽红亮，口味辣并鲜香。
+                        <br/>虾肉内锌、碘、硒等微量元素的含量要高于其它食品，
+                        <br/>同时，它的肌纤维细嫩，易于消化吸收。
+                        <br/>
+                    </p>
+                    <a href="#" class="btn">了解更多</a> </div>
+            </div>
+        </section>
+
+
+        <section data-aos="slide-left">
+            <div class="card">
+                <div class="card-img-right"><img src="{% static 'images/noodle/4.jpg' %}" /></div>
+                <div class="card-text">
+                    <h3>云吞面</h3>
+                    <p>云吞面又称馄饨面、细蓉、大蓉。是广东省的汉族特色小吃，属于粤菜系。
+                        <br/>一般以云吞拌面，分为汤面与捞面。
+                        <br/>云吞面是一种在中国十分普遍的食品。以煮熟的馄饨和蛋面，加入热汤即成。
+                        <br/>云吞面以云吞和面还有熬好的汤头制成，云吞口感润滑，面入口有弹性，让人回味无穷，
+                        <br/>面更具有弹性带嚼尽劲，并且云吞拥有丰富的蛋白质，淀粉等营养元素。
+                        <br/>
+                    </p>
+                    <a href="#" class="btn-left">了解更多</a> </div>
+            </div>
+        </section>
+
+
+        <section data-aos="slide-right">
+            <div class="card">
+                <div class="card-img-left"><img src="{% static 'images/noodle/5.jpg' %}" /></div>
+                <div class="card-text">
+                    <h3>香菇鸡肉面</h3>
+                    <p>1将香菇洗净切条，放入锅内，加盐、少许水煮熟；将青椒、红椒洗净切条。<br /> 2将鸡肉洗净切条。
+                        <br /> 3在锅内添适量水烧开，放入鸡肉条煮熟，捞出沥干。
+                        <br /> 4将面条放入开水锅中煮熟，捞入碗中。
+                        <br /> 5在面条上放上青椒条、红椒条、鸡肉条、香菇条，淋上香油即可。
+                    </p>
+                    <a href="#" class="btn">了解更多</a> </div>
+            </div>
+        </section>
+
+
+        <section data-aos="flip-left">
+            <div class="card">
+                <div class="card-img-right"><img src="{% static 'images/noodle/6.jpg' %}" /></div>
+                <div class="card-text">
+                    <h3>阳春面</h3>
+                    <p>1将鸡蛋打散成蛋液。<br /> 2在炒锅内注入色拉油烧热，倒入鸡蛋液煎成蛋饼，取出切碎。
+                        <br /> 3将香葱洗净，切成碎末。
+                        <br /> 4将面条放入开水锅中煮熟，捞入碗中，加少许盐、味精拌匀。
+                        <br /> 5将香葱末、鸡蛋碎撒在面条上即可。
+                    </p>
+                    <a href="#" class="btn-left">了解更多</a> </div>
+            </div>
+        </section>
+
+
+        <section data-aos="flip-right">
+            <div class="card">
+                <div class="card-img-left"><img src="{% static 'images/noodle/7.jpg' %}" /></div>
+                <div class="card-text">
+                    <h3>榨菜肉丝面</h3>
+                    <p>1.准备好材料，涪陵榨菜，猪肉，大葱，面条<br /> 2.事先炒好榨菜肉丝（此处太小写不下，不会自行百度））
+                        <br /> 3.锅里水烧开放入面条，大火煮3分钟加入一点冷水，煮开后小火闷2分钟就可以出锅了。
+                        <br /> 4.煮面条的时候切好香菜和青蒜。
+                        <br /> 5.碗里加入少许盐，生抽，和猪油。加入适量的开水或者高汤。
+                        <br /> 6.把煮好的面条挑到碗里，加入事先炒好的榨菜肉丝就好了。
+                    </p>
+                    <a href="#" class="btn">了解更多</a> </div>
+            </div>
+        </section>
+
+
+        <section data-aos="zoom-in-left">
+            <div class="card">
+                <div class="card-img-right"><img src="{% static 'images/noodle/2.jpg' %}" /></div>
+                <div class="card-text">
+                    <h3>武汉热干面</h3>
+                    <p>1.准备碱面条一份，咸鸭蛋一个。<br /> 2.芝麻酱放入容器中，兑入清水搅匀。
+                        <br /> 3.锅中烧热水，下入面条煮至稍微有点硬芯，捞出过凉水。
+                        <br /> 4.加入老抽、盐、十三香。
+                        <br /> 5.再加入3勺芝麻酱。
+                        <br /> 6.最后加入香油调味。
+                        <br /> 7.搅拌均匀装盘，放上咸鸭蛋，撒上葱花即可食用。
+                        <br />
+                    </p>
+                    <a href="#" class="btn-left">了解更多</a> </div>
+            </div>
+        </section>
+
+
+
+
+    </div>
+
+    <script type="text/javascript" src="{% static 'js/aos.js' %}"></script>
+    <script>
+        AOS.init({
+
+            easing: 'ease-out-back',
+            duration: 2000
+        });
+    </script>
+
+    <footer>
+        <div id="footer">
+            <p>Copyright @ 2008-2018 SHEJIANSHANGDESJTU.com, A11 rights reserved.</p>
+            <p>2020-2030，版权所有舌尖上的SJTU 5CP 备2013146</p>
+            <p>联系作者:Linux期末第3小组</p>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,533 @@
+{% load static %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="{% static 'js/swiper.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/index.js' %}"></script>
+
+    <title>舌尖上的交大</title>
+
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .menus.menus1 h1 {
+            vertical-align: sub;
+            float: left;
+            margin-top: 30px;
+            font-size: 54px;
+            text-transform: none;
+            font-family: "华文行楷";
+            font-weight: lighter;
+            color: #a9300a;
+        }
+        
+        .banenr {
+            height: 80px;
+            width: auto;
+            background-color: #a9300a;
+        }
+        
+        .banenr .banner-bg h3 {
+            font-size: 36px;
+            font-weight: lighter;
+            font-family: "华文行楷";
+            float: left;
+            margin-top: 20px;
+            color: #f1f1f1;
+            margin-left: -30px;
+        }
+        
+        .banner-bg {
+            margin: auto;
+            width: 1100px;
+            height: 80px;
+            padding-left: 0px;
+        }
+        
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        .clear {
+            clear: both;
+        }
+        
+        .menus {
+            width: 1100px;
+            margin-top: 0px;
+            margin-right: auto;
+            margin-bottom: 0px;
+            margin-left: auto;
+            height: 100px;
+        }
+        
+        .menus ul {
+            width: 700px;
+            position: relative;
+            float: right;
+            margin-top: 20px;
+            font-style: italic;
+            border-bottom-width: 2px;
+            border-bottom-style: solid;
+            border-bottom-color: #a9300a;
+        }
+        
+        .menus li {
+            float: left;
+            width: 100px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            cursor: pointer;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s;
+            font-size: 24px;
+        }
+        
+        .menus li:nth-child(2) {
+            color: #fff;
+        }
+        
+        .menus .bg {
+            width: 100px;
+            height: 40px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s;
+            background-image: url(../images/index/ban.png);
+        }
+        
+        .tab {
+            width: 750px;
+            height: 500px;
+            border: 1px solid #000;
+            margin-top: 20px;
+            font-size: 40px;
+            line-height: 500px;
+            text-align: center;
+            color: #888;
+            font-weight: bold;
+            display: none;
+        }
+        
+        .show {
+            display: block;
+        }
+        
+        #footer {
+            text-align: center;
+            vertical-align: middle;
+            height: 150px;
+            padding-top: 50px;
+            color: #FFF;
+            background-color: #333;
+        }
+        
+        body {
+            margin: 0px;
+            background-color: #f1f1f1;
+        }
+        
+        .slider {
+            background-color: #C99;
+            height: 620px;
+            width: 1100px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            border-radius: 12px;
+            padding-bottom: 0px;
+        }
+        
+        body {
+            width: auto;
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .slider1 {
+            height: 600px;
+            width: 1080px;
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-left: 10px;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+        
+        .welcome-text {
+            height: 200px;
+            width: 1100px;
+            margin-top: 12px;
+            margin-right: auto;
+            margin-bottom: 0px;
+            margin-left: auto;
+            background-color: #f1f1f1;
+            font-size: 48px;
+            text-align: center;
+            vertical-align: middle;
+            padding-top: 40px;
+        }
+        
+        .scroll-td-text {
+            height: 40px;
+            width: 280px;
+            text-align: center;
+            vertical-align: middle;
+            padding-top: 10px;
+            font-size: 24px;
+        }
+        
+        .introduce {
+            height: 40px;
+            width: 1100px;
+            margin-right: auto;
+            margin-left: auto;
+            font-size: 24px;
+            padding-top: 8px;
+            border-bottom-width: 2px;
+            border-left-width: 10px;
+            border-bottom-style: solid;
+            border-left-style: solid;
+            border-bottom-color: #F00;
+            border-left-color: #9F3;
+        }
+        
+        .introduce-content {
+            height: 500px;
+            width: 1100px;
+            margin-right: auto;
+            margin-left: auto;
+            background-color: #F0EBDB;
+            margin-bottom: 5px;
+            border-radius: 15px;
+        }
+        
+        #img-introduce {
+            background-color: #CC0;
+            float: left;
+            height: 480px;
+            width: 620px;
+            margin: 10px;
+        }
+        
+        #text-introduce {
+            margin: 10px;
+            height: 480px;
+            width: 440px;
+            float: left;
+        }
+        
+        .text-introducce {
+            height: 100px;
+            width: 440px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+        
+        .scroll {
+            height: 380px;
+            width: 1000px;
+            margin-right: auto;
+            background-color: #FFF;
+            position: relative;
+            overflow: hidden;
+            margin-top: 20px;
+            margin-bottom: auto;
+            margin-left: auto;
+        }
+        
+        .ms-ex {
+            padding: 10px;
+            height: 440px;
+            width: 1100px;
+            border: 1px solid #999;
+            font-family: "华文行楷";
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 14px;
+            margin-bottom: 14px;
+        }
+        
+        .text-box {
+            height: 40px;
+            width: 150px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            float: left;
+            font-size: 30px;
+            text-align: center;
+            vertical-align: middle;
+            padding-top: 10px;
+        }
+        
+        .ms-exhibition p {
+            height: 36px;
+            margin-top: 0px;
+        }
+        
+        .ms-exhibition {
+            margin-right: auto;
+            font-size: 36px;
+            padding-top: 0px;
+            text-align: center;
+            height: 36px;
+            width: 1000px;
+            margin-left: auto;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            background-color: #f1f1f1;
+        }
+        
+        #text-box1 {
+            background-color: #FF6;
+            border-radius: 12px;
+        }
+        
+        #text-box3 {
+            background-color: #F03;
+            border-radius: 12px;
+        }
+        
+        #text4 #text-box4 {
+            background-color: #6F6;
+            border-radius: 12px;
+        }
+        
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        #text-box2 {
+            background-color: #09F;
+            border-radius: 12px;
+        }
+        
+        .text-box-right {
+            float: left;
+            height: 80px;
+            width: 250px;
+            margin-top: 16px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-left: 10px;
+            font-size: 18px;
+        }
+        
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+        
+        .scroll-in {
+            height: 300px;
+            width: 1080px;
+            margin-top: 40px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        
+        .scroll-td {
+            height: 280px;
+            width: 280px;
+            margin-left: 0px;
+        }
+        
+        h3 {
+            font-size: 24px;
+            line-height: 30px;
+            font-family: "华文行楷";
+            text-indent: 48px;
+        }
+        
+        h1 {
+            line-height: 24px;
+            font-size: 44px;
+        }
+
+        h2 {
+            margin-top: 0px;
+            text-align: right;
+            font-family: "华文行楷";
+        }
+
+    </style>
+
+    <link href="{% static 'css/swiper.min.css' %}" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <h2>
+        你好，{{ name }}！
+    </h2>
+    <div class="menus menus1">
+        <h1>舌尖上的交大
+        </h1><br>
+        <ul>
+            <div class="bg"></div>
+            <li><span><a href="index.html" target="blank">首页</a></span></li>
+            <li><span><a href="1.html">一餐</a></span></li>
+            <li><span><a href="2.html">二餐</a></span></li>
+            <li><span><a href="3.html">三餐</a></span></li>
+            <li><span><a href="4.html">四餐</a></span></li>
+            <li><span><a href="5.html">哈乐餐厅</a></span></li>
+            <li><span><a href="6.html">玉兰苑</a></span></li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <script src="{% static 'js/index.js' %}"></script>
+    <div class="banenr">
+        <div class="banner-bg">
+            <h3>领略交大饮食之美 感知我交百廿历史</h3>
+        </div>
+    </div>
+
+    <div class="slider">
+        <div class="slider1">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="dumplings.html" target="new"><img src="{% static 'images/index/jz.jpg' %}" /></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="xz.html" target="new"><img src="{% static 'images/index/xz.jpg' %}" /></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="fired rice.html" target="new"><img src="{% static 'images/index/cf.jpg' %}" /></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="noodle.html" target="new"><img src="{% static 'images/index/mt.jpg' %}" /></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="drink.html" target="new"><img src="{% static 'images/index/gz.jpg' %}" /></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="bread.html" target="new"><img src="{% static 'images/index/mb.jpg' %}" /></a>
+                    </div>
+
+
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+            <!-- Swiper JS -->
+
+
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper('.swiper-container', {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                    loop: true,
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                });
+            </script>
+
+
+
+
+
+
+        </div>
+    </div>
+    <hr />
+
+    <div class="welcome-text">
+        <h3>&nbsp;</h3>
+        <h3>交大饮食文化是一种广视野、深层次、多菜系、高品质的校园食堂文化</h3>
+        <h3>这里汇集了四川、重庆、广式、西北等多种味道</h3>
+        <h3>在食材准备，食具研制，食品调理，营养搭配等方面都倾注了交大人的情感</h3>
+    </div>
+
+    <hr />
+
+    <div class="ms-ex">
+        <div class="ms-exhibition">
+            <p>特色菜肴展示</p>
+        </div>
+        <div class="scroll">
+            <marquee direction="right" behavior="alternate" scrolldelay="200" onmouseover="stop()" onmouseout="start()">
+                <table width="2400" border="0" cellspacing="20" cellpadding="0">
+                    <tr>
+                        <td class="scroll-td"><img src="{% static 'images/index/01.jpg' %}" /></td>
+                        <td class="scroll-td"><img src="{% static 'images/index/02.jpg' %}" /></td>
+                        <td class="scroll-td"><img src="{% static 'images/index/03.jpg' %}" /></td>
+                        <td class="scroll-td"><img src="{% static 'images/index/04.jpg' %}" /></td>
+                        <td class="scroll-td"><img src="{% static 'images/index/05.jpg' %}" /></td>
+                        <td class="scroll-td"><img src="{% static 'images/index/06.jpg' %}" /></td>
+                    </tr>
+
+                    <tr>
+                        <td class="scroll-td-text">拌面</td>
+                            <td class="scroll-td-text">蛋包饭</td>
+                                <td class="scroll-td-text">咕咾肉</td>
+                                    <td class="scroll-td-text">河南烩面</td>
+                                        <td class="scroll-td-text">麻辣香锅</td>
+                                            <td class="scroll-td-text">石锅拌饭</td>
+                    </tr>
+                </table>
+            </marquee>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <div id="footer">
+            <p>Copyright @ 2008-2018 SHEJIANSHANGDESJTU.com, A11 rights reserved.</p>
+            <p>2020-2030，版权所有舌尖上的SJTU 5CP 备2013146</p>
+            <p>联系作者:Linux期末第3小组</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>
